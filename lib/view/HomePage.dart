@@ -15,6 +15,19 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Future<void> _launched;
 
+  Future<void> _launchInBrowser(String url) async {
+    if (await canLaunch(url)) {
+      await launch(
+        url,
+        forceSafariVC: false,
+        forceWebView: false,
+        headers: <String, String>{'my_header_key': 'my_header_value'},
+      );
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   Future<void> _launchInWebViewWithJavaScript(String url) async {
     if (await canLaunch(url)) {
       await launch(
@@ -94,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // Discord Button
             RaisedButtonLaunch(
               function: () => setState(() {
-                _launched = _launchInWebViewWithJavaScript(discordLink);
+                _launched = _launchInBrowser(discordLink);
               }),
               txt: "Discord",
               color: Colors.purple,

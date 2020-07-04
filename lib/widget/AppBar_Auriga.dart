@@ -7,5 +7,11 @@ class AppBarAuriga extends AppBar {
           title: Text(titleTex),
           elevation: 15.0,
           centerTitle: true,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(15.0),
+              bottomRight: Radius.circular(15.0),
+            ),
+          ),
         );
 }

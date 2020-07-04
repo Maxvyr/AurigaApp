@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-// ignore: must_be_immutable
 class RaisedButtonLaunch extends StatelessWidget {
-  dynamic function;
-  String txt;
-  Color color;
+  final dynamic function;
+  final String txt;
+  final Color color;
 
   RaisedButtonLaunch({
     @required this.function,
@@ -18,14 +18,26 @@ class RaisedButtonLaunch extends StatelessWidget {
     return FractionallySizedBox(
       widthFactor: 0.7,
       child: RaisedButton(
+        padding: EdgeInsets.symmetric(vertical: 15.0),
         elevation: 15.0,
         onPressed: function,
         child: Text(
           txt,
-          style: TextStyle(
+          style: GoogleFonts.mina(
             fontSize: 20.0,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w900,
+            shadows: <Shadow>[
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 4.0,
+                color: Colors.grey,
+              ),
+            ],
           ),
+          // style: TextStyle(
+          //   fontSize: 20.0,
+          //   fontWeight: FontWeight.w600,
+          // ),
         ),
         color: color,
         shape: RoundedRectangleBorder(
