@@ -4,14 +4,14 @@ A new Flutter project for the streaming team Auriga.
 
 # Auriga team Link => 
 
-Youtube > <a href="https://www.youtube.com/channel/UCcdtBUQj-Rcm7LjXc9PMeDg" target="_blank"></a>
-Twitch GreyFoxxTV> <a href="https://www.twitch.tv/greyfoxxtv" target="_blank"></a>
-Twitch Nirusan> <a href="https://www.twitch.tv/nirusan" target="_blank"></a>
-Twitch KelrysTv> <a href="https://www.twitch.tv/kelrystv" target="_blank"></a>
-Twitch ReyexTV> <a href="https://www.twitch.tv/reyextv" target="_blank"></a>
+Youtube > https://www.youtube.com/channel/UCcdtBUQj-Rcm7LjXc9PMeDg
+Twitch GreyFoxxTV> https://www.twitch.tv/greyfoxxtv
+Twitch Nirusan> https://www.twitch.tv/nirusan
+Twitch KelrysTv> https://www.twitch.tv/kelrystv
+Twitch ReyexTV> https://www.twitch.tv/reyextv
 
 
-Discord > <a href="https://discord.gg/BaAQpWH" target="_blank"></a>
+Discord > https://discord.gg/BaAQpWH
 
 
 # My apps on Store
