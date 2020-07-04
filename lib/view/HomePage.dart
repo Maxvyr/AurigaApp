@@ -48,7 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
     const String nirusanLinkTwitch = 'https://www.twitch.tv/nirusan';
     const String greyfoxLinkTwitch = 'https://www.twitch.tv/greyfoxxtv';
     const String kelrysTVLinkTwitch = 'https://www.twitch.tv/kelrystv';
-    const String reyexLinkTwitch = 'https://www.twitch.tv/reyex';
     const String reyexTVLinkTwitch = 'https://www.twitch.tv/reyextv';
     const String discordLink = 'https://discord.gg/BaAQpWH';
     const String youtubeLink =
@@ -78,22 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
               color: blue,
             ),
 
-            // Kelrys Button
+            // KelrysTV Button
             RaisedButtonLaunch(
               function: () => setState(() {
                 _launched = _launchInWebViewWithJavaScript(kelrysTVLinkTwitch);
               }),
               txt: "Go to KelrysTV Live",
               color: yellow,
-            ),
-
-            // Reyex Button
-            RaisedButtonLaunch(
-              function: () => setState(() {
-                _launched = _launchInWebViewWithJavaScript(reyexLinkTwitch);
-              }),
-              txt: "Go to Reyex Live",
-              color: green,
             ),
 
             // ReyexTv Button
