@@ -1,7 +1,8 @@
-import 'package:auriga/widget/RaisedButton_Launch.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../controller/Colors.dart';
+import '../widget/RaisedButton_Launch.dart';
 import '../widget/AppBar_Auriga.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -65,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launchInWebViewWithJavaScript(greyfoxLinkTwitch);
               }),
               txt: "Go to GreyfoxxTV live",
-              color: Colors.red,
+              color: red,
             ),
 
             // Nirusan Button
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(nirusanLinkTwitch);
               }),
               txt: "Go to Nirusan Live",
-              color: Colors.blue,
+              color: blue,
             ),
 
             // Kelrys Button
@@ -83,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(kelrysTVLinkTwitch);
               }),
               txt: "Go to KelrysTV Live",
-              color: Colors.yellow,
+              color: yellow,
             ),
 
             // Reyex Button
@@ -92,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(reyexLinkTwitch);
               }),
               txt: "Go to Reyex Live",
-              color: Colors.green,
+              color: green,
             ),
 
             // ReyexTv Button
@@ -101,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(reyexTVLinkTwitch);
               }),
               txt: "Go to ReyexTV Live",
-              color: Colors.green,
+              color: green,
             ),
 
             // Discord Button
@@ -110,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInBrowser(discordLink);
               }),
               txt: "Discord",
-              color: Colors.purple,
+              color: purple,
             ),
 
             // Youtube Button
@@ -119,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(youtubeLink);
               }),
               txt: "Youtube",
-              color: Colors.red,
+              color: red,
             ),
           ],
         ),

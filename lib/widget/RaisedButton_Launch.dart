@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../controller/Colors.dart';
+
 class RaisedButtonLaunch extends StatelessWidget {
   final dynamic function;
   final String txt;
@@ -24,20 +26,17 @@ class RaisedButtonLaunch extends StatelessWidget {
         child: Text(
           txt,
           style: GoogleFonts.mina(
+            color: black,
             fontSize: 20.0,
             fontWeight: FontWeight.w900,
             shadows: <Shadow>[
               Shadow(
-                offset: Offset(2.0, 2.0),
+                offset: Offset(1.0, 1.0),
                 blurRadius: 4.0,
-                color: Colors.grey,
+                color: white,
               ),
             ],
           ),
-          // style: TextStyle(
-          //   fontSize: 20.0,
-          //   fontWeight: FontWeight.w600,
-          // ),
         ),
         color: color,
         shape: RoundedRectangleBorder(
