@@ -12,7 +12,7 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="auriga"
-        android:icon="@mipmap/logoV1">
+        android:icon="@mipmap/logov1">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
