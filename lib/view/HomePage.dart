@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launchInWebViewWithJavaScript(greyfoxLinkTwitch);
               }),
               txt: "Go to GreyfoxxTV live",
-              color: red,
+              color: blue,
             ),
 
             // Nirusan Button
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _launched = _launchInWebViewWithJavaScript(nirusanLinkTwitch);
               }),
               txt: "Go to Nirusan Live",
-              color: blue,
+              color: red,
             ),
 
             // KelrysTV Button
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // Youtube Button
             RaisedButtonLaunch(
               function: () => setState(() {
-                _launched = _launchInWebViewWithJavaScript(youtubeLink);
+                _launched = _launchInBrowser(youtubeLink);
               }),
               txt: "Youtube",
               color: red,
