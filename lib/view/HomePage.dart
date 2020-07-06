@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         'https://www.youtube.com/channel/UCcdtBUQj-Rcm7LjXc9PMeDg';
 
     return Scaffold(
-      appBar: AppBarAuriga(titleTex: "Auriga TV"),
+      appBar: AppBarAuriga(titleText: "Auriga TV"),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,

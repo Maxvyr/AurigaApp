@@ -5,10 +5,10 @@ import '../controller/Colors.dart';
 
 class AppBarAuriga extends AppBar {
   AppBarAuriga({
-    @required String titleTex,
+    @required String titleText,
   }) : super(
           title: Text(
-            titleTex,
+            titleText,
             style: GoogleFonts.mina(
               color: white,
               fontSize: 25.0,
