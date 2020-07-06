@@ -1,5 +1,5 @@
+import 'view/HomePageView.dart';
 import 'package:flutter/material.dart';
-import 'view/HomePage.dart';
 import 'controller/Colors.dart';
 
 void main() {
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: green,
       ),
-      home: MyHomePage(title: 'Auriga TV'),
+      home: PageViewAurigaTV(),
+      // home: MyHomePage(title: 'Auriga TV'),
     );
   }
 }

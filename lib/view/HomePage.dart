@@ -6,9 +6,6 @@ import '../widget/RaisedButton_Launch.dart';
 import '../widget/AppBar_Auriga.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -54,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         'https://www.youtube.com/channel/UCcdtBUQj-Rcm7LjXc9PMeDg';
 
     return Scaffold(
-      appBar: AppBarAuriga(titleTex: widget.title),
+      appBar: AppBarAuriga(titleTex: "Auriga TV"),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
