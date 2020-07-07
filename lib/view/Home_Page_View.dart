@@ -1,10 +1,12 @@
-import 'package:auriga/main.dart';
-
-import '../controller/Variables.dart';
+import 'package:auriga/view/GreyfooxTV_Page.dart';
+import 'package:auriga/view/KelryTV_Page.dart';
+import 'package:auriga/view/NirusanTV_Page.dart';
+import 'package:auriga/view/ReyexTV_Page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import 'HomePage.dart';
+import '../controller/Variables.dart';
+import 'Home_Page.dart';
 
 class PageViewAurigaTV extends StatefulWidget {
   PageViewAurigaTV({Key key}) : super(key: key);
@@ -32,7 +34,11 @@ class _PageViewAurigaTVState extends State<PageViewAurigaTV> {
         controller: pageController,
         dragStartBehavior: DragStartBehavior.start,
         children: [
-          MyHomePage(),
+          HomePage(),
+          GreyFoxxTVPage(),
+          NirusanTVPage(),
+          KelrysTVPage(),
+          ReyexTVPage(),
         ],
       ),
     );
