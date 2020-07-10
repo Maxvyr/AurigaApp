@@ -5,7 +5,6 @@ import 'package:auriga/view/NirusanTV_Page.dart';
 import 'package:auriga/view/ReyexTV_Page.dart';
 import 'package:auriga/widget/Card_BottomBar.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'Home_Page.dart';
 
