@@ -1,11 +1,12 @@
+import 'package:auriga/controller/Colors.dart';
 import 'package:auriga/view/GreyfooxTV_Page.dart';
 import 'package:auriga/view/KelryTV_Page.dart';
 import 'package:auriga/view/NirusanTV_Page.dart';
 import 'package:auriga/view/ReyexTV_Page.dart';
-import 'package:flutter/gestures.dart';
+import 'package:auriga/widget/Card_BottomBar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-import '../controller/Variables.dart';
 import 'Home_Page.dart';
 
 class PageViewAurigaTV extends StatefulWidget {
@@ -14,33 +15,50 @@ class PageViewAurigaTV extends StatefulWidget {
   _PageViewAurigaTVState createState() => _PageViewAurigaTVState();
 }
 
-class _PageViewAurigaTVState extends State<PageViewAurigaTV> {
+class _PageViewAurigaTVState extends State<PageViewAurigaTV>
+    with SingleTickerProviderStateMixin {
+  // local var
+  TabController tabController;
+
   @override
   void initState() {
     super.initState();
-    pageController = PageController(initialPage: 1);
+    tabController = TabController(vsync: this, length: 5);
   }
 
   @override
   void dispose() {
-    pageController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    // local context var
+    dynamic size = MediaQuery.of(context).size;
+
     return Scaffold(
-      body: PageView(
-        controller: pageController,
-        dragStartBehavior: DragStartBehavior.start,
-        children: [
-          HomePage(),
-          GreyFoxxTVPage(),
-          NirusanTVPage(),
-          KelrysTVPage(),
-          ReyexTVPage(),
-        ],
+      body: Container(
+        // height: size.height,
+        width: double.maxFinite,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [white, green],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: TabBarView(
+          controller: tabController,
+          children: [
+            HomePage(),
+            GreyFoxxTVPage(),
+            NirusanTVPage(),
+            KelrysTVPage(),
+            ReyexTVPage(),
+          ],
+        ),
       ),
+      bottomNavigationBar: CardBottomBar(tabController: tabController),
     );
   }
 }
