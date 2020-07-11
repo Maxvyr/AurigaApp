@@ -1,9 +1,9 @@
-import 'package:auriga/controller/Colors.dart';
-import 'package:auriga/view/GreyfooxTV_Page.dart';
-import 'package:auriga/view/KelryTV_Page.dart';
-import 'package:auriga/view/NirusanTV_Page.dart';
-import 'package:auriga/view/ReyexTV_Page.dart';
-import 'package:auriga/widget/Card_BottomBar.dart';
+import '../controller/Colors.dart';
+import '../view/GreyfooxTV_Page.dart';
+import '../view/KelryTV_Page.dart';
+import '../view/NirusanTV_Page.dart';
+import '../view/ReyexTV_Page.dart';
+import '../widget/Card_BottomBar.dart';
 import 'package:flutter/material.dart';
 
 import 'Home_Page.dart';
@@ -22,7 +22,7 @@ class _PageViewAurigaTVState extends State<PageViewAurigaTV>
   @override
   void initState() {
     super.initState();
-    tabController = TabController(vsync: this, length: 5);
+    tabController = TabController(vsync: this, length: 4);
   }
 
   @override
@@ -49,7 +49,7 @@ class _PageViewAurigaTVState extends State<PageViewAurigaTV>
         child: TabBarView(
           controller: tabController,
           children: [
-            HomePage(),
+            // HomePage(),
             GreyFoxxTVPage(),
             NirusanTVPage(),
             KelrysTVPage(),

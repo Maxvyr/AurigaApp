@@ -17,7 +17,11 @@ class _KelrysTVPageState extends State<KelrysTVPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarAuriga(titleText: "Auriga TV"),
+      appBar: AppBarAuriga(
+        linkImg: kelrysLogo,
+        titleText: "Kelrys TV",
+        color: yellow,
+      ),
       body: ContainerBackground(
         context: context,
         child: Center(

@@ -17,7 +17,11 @@ class _NirusanTVPageState extends State<NirusanTVPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarAuriga(titleText: "Auriga TV"),
+      appBar: AppBarAuriga(
+        linkImg: nirusanLogo,
+        titleText: "Nirusan TV",
+        color: red,
+      ),
       body: ContainerBackground(
         context: context,
         child: Center(

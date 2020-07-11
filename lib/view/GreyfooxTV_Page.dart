@@ -17,7 +17,11 @@ class _GreyFoxxTVPageState extends State<GreyFoxxTVPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarAuriga(titleText: "Auriga TV"),
+      appBar: AppBarAuriga(
+        linkImg: greyfoxxLogo,
+        titleText: "GreyFoxx TV",
+        color: blue,
+      ),
       body: ContainerBackground(
         context: context,
         child: Center(

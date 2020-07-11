@@ -17,7 +17,11 @@ class _ReyexTVPageState extends State<ReyexTVPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarAuriga(titleText: "Auriga TV"),
+      appBar: AppBarAuriga(
+        linkImg: reyexLogo,
+        titleText: "Reyex TV",
+        color: green,
+      ),
       body: ContainerBackground(
         context: context,
         child: Center(

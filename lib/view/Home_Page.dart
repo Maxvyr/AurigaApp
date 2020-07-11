@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarAuriga(titleText: "Auriga TV"),
+      // appBar: AppBarAuriga(titleText: "Auriga TV"),
       body: ContainerBackground(
         context: context,
         child: Center(
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               // Discord Button
               RaisedButtonLaunch(
                 function: () => setState(() {
-                  launched = launchInBrowser(discordLink);
+                  launched = launchInBrowser(discordAurigaLink);
                 }),
                 txt: "Discord",
                 color: purple,
