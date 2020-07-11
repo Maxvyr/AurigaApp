@@ -34,6 +34,5 @@ class AppBarAuriga extends AppBar {
             ),
           ),
           backgroundColor: color,
-          actions: <Widget>[],
         );
 }
