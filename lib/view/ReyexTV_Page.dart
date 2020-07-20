@@ -36,6 +36,14 @@ class _ReyexTVPageState extends State<ReyexTVPage> {
                 txt: "Go to ReyexTV Live",
                 color: green,
               ),
+
+              RaisedButtonLaunch(
+                function: () => setState(() {
+                  launchInBrowser(reyexTVLinkTwitter);
+                }),
+                txt: "Twitter",
+                color: green,
+              ),
             ],
           ),
         ),

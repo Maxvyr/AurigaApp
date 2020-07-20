@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../controller/Colors.dart';
 import '../widget/RaisedButton_Launch.dart';
-import '../widget/AppBar_Auriga.dart';
 import '../controller/Constant.dart';
 import '../controller/Function_Launch_Web.dart';
 

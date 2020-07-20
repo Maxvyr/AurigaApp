@@ -6,6 +6,9 @@ const String reyexTVLinkTwitch = 'https://www.twitch.tv/reyextv';
 const String discordAurigaLink = 'https://discord.gg/BaAQpWH';
 const String youtubeLink =
     'https://www.youtube.com/channel/UCcdtBUQj-Rcm7LjXc9PMeDg';
+const String greyfoxLinkTwitter = "https://twitter.com/GreyFoxxTV";
+const String nirusanLinkTwitter = "https://twitter.com/_Nirusan";
+const String reyexTVLinkTwitter = "https://twitter.com/ReyexHD";
 
 const String greyfoxxLogo =
     "https://static-cdn.jtvnw.net/jtv_user_pictures/572e1969-46e8-4eb7-a94e-4f665ff954ee-profile_image-70x70.png";

@@ -36,6 +36,14 @@ class _NirusanTVPageState extends State<NirusanTVPage> {
                 txt: "Go to Nirusan Live",
                 color: red,
               ),
+
+              RaisedButtonLaunch(
+                function: () => setState(() {
+                  launchInBrowser(nirusanLinkTwitter);
+                }),
+                txt: "Twitter",
+                color: red,
+              ),
             ],
           ),
         ),

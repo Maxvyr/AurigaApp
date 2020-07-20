@@ -10,13 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Auriga TV app',
+      title: "Auriga TV app",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: green,
       ),
       home: PageViewAurigaTV(),
-      // home: MyHomePage(title: 'Auriga TV'),
     );
   }
 }

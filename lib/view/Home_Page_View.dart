@@ -6,8 +6,6 @@ import '../view/ReyexTV_Page.dart';
 import '../widget/Card_BottomBar.dart';
 import 'package:flutter/material.dart';
 
-import 'Home_Page.dart';
-
 class PageViewAurigaTV extends StatefulWidget {
   PageViewAurigaTV({Key key}) : super(key: key);
 
@@ -33,7 +31,6 @@ class _PageViewAurigaTVState extends State<PageViewAurigaTV>
   @override
   Widget build(BuildContext context) {
     // local context var
-    dynamic size = MediaQuery.of(context).size;
 
     return Scaffold(
       body: Container(

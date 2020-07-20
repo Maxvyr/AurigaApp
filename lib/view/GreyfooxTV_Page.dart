@@ -86,6 +86,13 @@ class _GreyFoxxTVPageState extends State<GreyFoxxTVPage> {
                 txt: "Go to GreyfoxxTV live",
                 color: blue,
               ),
+              RaisedButtonLaunch(
+                function: () => setState(() {
+                  launchInBrowser(greyfoxLinkTwitter);
+                }),
+                txt: "Twitter",
+                color: blue,
+              ),
             ],
           ),
         ),
