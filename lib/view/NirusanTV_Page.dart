@@ -1,10 +1,7 @@
 import '../controller/Colors.dart';
 import '../controller/Constant.dart';
-import '../controller/Function_Launch_Web.dart';
-import '../widget/AppBar_Auriga.dart';
-import '../widget/Container_Background.dart';
-import '../widget/RaisedButton_Launch.dart';
 import 'package:flutter/material.dart';
+import 'Base_Page_Auriga_User.dart';
 
 class NirusanTVPage extends StatefulWidget {
   @override
@@ -16,38 +13,13 @@ class _NirusanTVPageState extends State<NirusanTVPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBarAuriga(
-        linkImg: nirusanLogo,
-        titleText: "Nirusan TV",
-        color: red,
-      ),
-      body: ContainerBackground(
-        context: context,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              // Nirusan Button
-              RaisedButtonLaunch(
-                function: () => setState(() {
-                  launched = launchInWebViewWithJavaScript(nirusanLinkTwitch);
-                }),
-                txt: "Go to Nirusan Live",
-                color: red,
-              ),
-
-              RaisedButtonLaunch(
-                function: () => setState(() {
-                  launchInBrowser(nirusanLinkTwitter);
-                }),
-                txt: "Twitter",
-                color: red,
-              ),
-            ],
-          ),
-        ),
-      ),
+    return BasePageAurigaUser(
+      logo: nirusanLogo,
+      title: "Nirusan",
+      twitchLink: nirusanLinkTwitch,
+      txtTwitchLink: "Go to Niruan TV",
+      color: red,
+      twitterLink: nirusanLinkTwitter,
     );
   }
 }
