@@ -1,10 +1,8 @@
 import '../controller/Colors.dart';
 import '../controller/Constant.dart';
-import '../controller/Function_Launch_Web.dart';
-import '../widget/AppBar_Auriga.dart';
-import '../widget/Container_Background.dart';
-import '../widget/RaisedButton_Launch.dart';
 import 'package:flutter/material.dart';
+
+import 'Base_Page_Auriga_User.dart';
 
 class KelrysTVPage extends StatefulWidget {
   @override
@@ -14,32 +12,19 @@ class KelrysTVPage extends StatefulWidget {
 class _KelrysTVPageState extends State<KelrysTVPage> {
   Future<void> launched;
 
+
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBarAuriga(
-        linkImg: kelrysLogo,
-        titleText: "Kelrys TV",
-        color: yellow,
-      ),
-      body: ContainerBackground(
-        context: context,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              // KelrysTV Button
-              RaisedButtonLaunch(
-                function: () => setState(() {
-                  launched = launchInWebViewWithJavaScript(kelrysTVLinkTwitch);
-                }),
-                txt: "Go to KelrysTV Live",
-                color: yellow,
-              ),
-            ],
-          ),
-        ),
-      ),
+    return BasePageAurigaUser(
+      logo: kelrysLogo,
+      title: "KelrysTV",
+      content: "Salut je joue principalement avec mes amis et c'est la bonne humeur le plus important de toute façon. Des bisous.",
+      twitchLink: kelrysTVLinkTwitch,
+      txtTwitchLink: "Go to Kelrys TV",
+      color: yellow,
+      twitterLink: null,
     );
   }
+
 }

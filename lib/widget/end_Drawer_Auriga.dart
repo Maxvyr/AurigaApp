@@ -1,11 +1,15 @@
-import 'package:auriga/controller/Colors.dart';
+import '../controller/Colors.dart';
+import '../controller/Constant.dart';
+import '../controller/Function_Launch_Web.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+//var local
+double iconSizeButton = 80.0;
+
 class EndDrawerAuriga extends Drawer {
-  EndDrawerAuriga({
-    @required BuildContext context,
-  }) : super(
+  EndDrawerAuriga({@required BuildContext context, @required Color color1})
+      : super(
           child: Stack(
             alignment: Alignment.topCenter,
             children: <Widget>[
@@ -14,7 +18,7 @@ class EndDrawerAuriga extends Drawer {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      blue,
+                      color1,
                       white,
                     ],
                   ),
@@ -41,14 +45,20 @@ class EndDrawerAuriga extends Drawer {
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.3,
                 child: IconButton(
+                    iconSize: iconSizeButton,
                     icon: Image.network("https://i.imgur.com/K8H0qxX.png"),
-                    onPressed: null),
+                    onPressed: () {
+                      launchInBrowser(discordAurigaLink);
+                    }),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.4,
                 child: IconButton(
+                    iconSize: iconSizeButton,
                     icon: Image.network("https://i.imgur.com/ouXb28u.png"),
-                    onPressed: null),
+                    onPressed: () {
+                      launchInBrowser(youtubeLink);
+                    }),
               ),
             ],
           ),

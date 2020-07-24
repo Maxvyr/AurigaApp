@@ -21,7 +21,7 @@ class RaisedButtonLaunch extends StatelessWidget {
       widthFactor: 0.7,
       child: RaisedButton(
         padding: EdgeInsets.symmetric(vertical: 15.0),
-        elevation: 15.0,
+        elevation: 8.0,
         onPressed: function,
         child: Text(
           txt,

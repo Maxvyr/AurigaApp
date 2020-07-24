@@ -16,6 +16,7 @@ class _GreyFoxxTVPageState extends State<GreyFoxxTVPage> {
     return BasePageAurigaUser(
       logo: greyfoxxLogo,
       title: "GreyFoxxTv",
+      content: "Salut ! Je stream de façon régulière (3/4 stream par semaine) avec mes amis dans la joie, la bonne humeur et on rigole bien :)",
       twitchLink: greyfoxLinkTwitch,
       txtTwitchLink: "Go to GreyFoxx TV",
       color: blue,

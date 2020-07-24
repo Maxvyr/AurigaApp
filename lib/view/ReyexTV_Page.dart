@@ -16,6 +16,7 @@ class _ReyexTVPageState extends State<ReyexTVPage> {
     return BasePageAurigaUser(
       logo: reyexLogo,
       title: "ReyexTv",
+      content: "",
       twitchLink: reyexTVLinkTwitch,
       txtTwitchLink: "Go to Reyex TV",
       color: green,

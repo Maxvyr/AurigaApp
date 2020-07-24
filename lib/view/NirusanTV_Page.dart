@@ -16,6 +16,7 @@ class _NirusanTVPageState extends State<NirusanTVPage> {
     return BasePageAurigaUser(
       logo: nirusanLogo,
       title: "Nirusan",
+      content: "",
       twitchLink: nirusanLinkTwitch,
       txtTwitchLink: "Go to Niruan TV",
       color: red,
