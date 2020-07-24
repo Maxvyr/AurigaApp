@@ -5,7 +5,7 @@ import '../controller/Function_Launch_Web.dart';
 import '../widget/AppBar_Auriga.dart';
 import '../widget/Container_Background.dart';
 import '../widget/RaisedButton_Launch.dart';
-import '../widget/end_Drawer_Auriga.dart';
+import '../widget/Drawer_Auriga.dart';
 import 'package:flutter/material.dart';
 //import 'dart:math';
 
@@ -92,7 +92,8 @@ class _BasePageAurigaUserState extends State<BasePageAurigaUser> {
                   // GreyfoxxTV Button
                   RaisedButtonLaunch(
                     function: () => setState(() {
-                      launchInWebViewWithJavaScript(this.widget.twitchLink);
+//                      launchInWebViewWithJavaScript(this.widget.twitchLink);
+                      launchInBrowser(this.widget.twitchLink);
                     }),
                     txt: this.widget.txtTwitchLink,
                     color: this.widget.color,
