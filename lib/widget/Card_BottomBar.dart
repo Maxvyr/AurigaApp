@@ -23,20 +23,16 @@ class CardBottomBar extends Card {
                 isScrollable: true,
                 tabs: <Widget>[
                   Tab(
-                    child: columnBottomBarAuriga(
-                      link: greyfoxxLogo),
+                    child: columnBottomBarAuriga(link: greyfoxxLogo),
                   ),
                   Tab(
-                    child: columnBottomBarAuriga(
-                        link: nirusanLogo),
+                    child: columnBottomBarAuriga(link: nirusanLogo),
                   ),
                   Tab(
-                    child: columnBottomBarAuriga(
-                        link: kelrysLogo),
+                    child: columnBottomBarAuriga(link: kelrysLogo),
                   ),
                   Tab(
-                    child: columnBottomBarAuriga(
-                        link: reyexLogo),
+                    child: columnBottomBarAuriga(link: reyexLogo),
                   ),
                 ],
               ),

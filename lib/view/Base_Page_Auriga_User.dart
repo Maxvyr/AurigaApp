@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../controller/Colors.dart';
 import '../controller/Function_Launch_Web.dart';
@@ -6,6 +7,7 @@ import '../widget/Container_Background.dart';
 import '../widget/RaisedButton_Launch.dart';
 import '../widget/end_Drawer_Auriga.dart';
 import 'package:flutter/material.dart';
+//import 'dart:math';
 
 // ignore: must_be_immutable
 class BasePageAurigaUser extends StatefulWidget {
@@ -42,17 +44,17 @@ class BasePageAurigaUser extends StatefulWidget {
 class _BasePageAurigaUserState extends State<BasePageAurigaUser> {
   @override
   Widget build(BuildContext context) {
-
 //    variable
     var heightTotal = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
+    var widthTotal = MediaQuery.of(context).size.width;
+//    var randomNumber = Random().nextInt(365);
+
     return Scaffold(
       appBar: AppBarAuriga(
-        linkImg: this.widget.logo,
         titleText: this.widget.title,
         color: this.widget.color,
       ),
-      endDrawer: EndDrawerAuriga(context: context, color1: this.widget.color),
+      drawer: DrawerAuriga(context: context, color1: this.widget.color),
       body: ContainerBackground(
         context: context,
         child: Center(
@@ -62,7 +64,21 @@ class _BasePageAurigaUserState extends State<BasePageAurigaUser> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
+                  SizedBox(height: heightTotal * 0.02),
 
+                  Transform.rotate(
+                    angle: 0,
+//                    angle: randomNumber.toDouble(),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: Image.network(
+                        this.widget.logo,
+                        fit: BoxFit.fill,
+                        width: widthTotal * 0.4,
+                        height: heightTotal * 0.3,
+                      ),
+                    ),
+                  ),
                   SizedBox(height: heightTotal * 0.02),
                   Text(
                     this.widget.content,
@@ -81,15 +97,15 @@ class _BasePageAurigaUserState extends State<BasePageAurigaUser> {
                     txt: this.widget.txtTwitchLink,
                     color: this.widget.color,
                   ),
-                   SizedBox(height: heightTotal * 0.02),
-                   RaisedButtonLaunch(
-                     function: () => setState(() {
-                       launchInBrowser(this.widget.twitterLink);
-                     }),
-                     txt: "Twitter",
-                     color: (this.widget.color != null) ? this.widget.color :
-                     grey,
-                   ),
+                  SizedBox(height: heightTotal * 0.02),
+                  RaisedButtonLaunch(
+                    function: () => setState(() {
+                      launchInBrowser(this.widget.twitterLink);
+                    }),
+                    txt: "Twitter",
+                    color:
+                        (this.widget.color != null) ? this.widget.color : grey,
+                  ),
                   SizedBox(height: heightTotal * 0.02),
                 ],
               ),

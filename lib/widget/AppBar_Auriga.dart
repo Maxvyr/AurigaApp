@@ -4,12 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../controller/Colors.dart';
 
 class AppBarAuriga extends AppBar {
-  AppBarAuriga(
-      {@required String linkImg,
-      @required String titleText,
-      @required Color color})
+  AppBarAuriga({@required String titleText, @required Color color})
       : super(
-          leading: Image.network(linkImg),
           title: Text(
             titleText,
             style: GoogleFonts.mina(

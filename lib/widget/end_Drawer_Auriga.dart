@@ -7,8 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 //var local
 double iconSizeButton = 80.0;
 
-class EndDrawerAuriga extends Drawer {
-  EndDrawerAuriga({@required BuildContext context, @required Color color1})
+class DrawerAuriga extends Drawer {
+  DrawerAuriga({@required BuildContext context, @required Color color1})
       : super(
           child: Stack(
             alignment: Alignment.topCenter,
