@@ -74,7 +74,7 @@ class _BasePageAurigaUserState extends State<BasePageAurigaUser> {
                       child: Image.network(
                         this.widget.logo,
                         fit: BoxFit.fill,
-                        width: widthTotal * 0.4,
+                        width: widthTotal * 0.5,
                         height: heightTotal * 0.3,
                       ),
                     ),
