@@ -20,11 +20,14 @@ Discord > https://discord.gg/BaAQpWH
 
 # My apps on Store
 
-<a href="https://play.google.com/store/apps/developer?id=Pandamy" target="_blank"><img src="https://i.imgur.com/YetVBL1.png" alt="Get in on PlayStore" style="height: 25px; width: 50px;" ></a>
+<a href="[https://play.google.com/store/apps/developer?id=Pandamy](https://play.google.com/store/apps/developer?id=Pandamy)" target="_blank"><img src="[https://i.imgur.com/YetVBL1.png](https://i.imgur.com/YetVBL1.png)" alt="Get in on PlayStore" style="height: 25px; width: 50px;" ></a>
 
-contact : pandamydev@gmail.com 
+contact : [pandamydev@gmail.com](mailto:pandamydev@gmail.com)
 
-# Crypto Tips 
+# Tips
 
+- [Donation](https://ko-fi.com/maxvyr)
 
-![ETH_QR_Code](https://i.imgur.com/XpF2vgw.png)
+# Crypto Tips
+
+![https://i.imgur.com/XpF2vgw.png](https://i.imgur.com/XpF2vgw.png)
